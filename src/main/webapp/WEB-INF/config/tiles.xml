@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+    <definition name="base.definition" template="/WEB-INF/views/template/mainTemplate.jsp">
+        <put-attribute name="title" value=""></put-attribute>
+        <put-attribute name="header" value="/WEB-INF/views/header.jsp"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/menu.jsp"></put-attribute>
+        <put-attribute name="body" value=""></put-attribute>
+        <put-attribute name="footer" value="/WEB-INF/views/footer.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="base.page1" template="/WEB-INF/views/template/mainBlankTemp.jsp">
+    	<put-attribute name="title" value=""></put-attribute>
+        <put-attribute name="header" value="/WEB-INF/views/header.jsp"></put-attribute>
+        <put-attribute name="body" value=""></put-attribute>
+        <put-attribute name="footer" value="/WEB-INF/views/footer.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="base.blank" template="/WEB-INF/views/template/blank.jsp">
+    	<put-attribute name="title" value=""></put-attribute>
+    	<put-attribute name="body" value=""></put-attribute>
+    </definition>
+    
+    <definition name="login" extends="base.page1">
+    	<put-attribute name="title" value="Stockie - Login"></put-attribute>
+    	<put-attribute name="body" value="/WEB-INF/views/login.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="home" extends="base.definition">
+    	<put-attribute name="title" value="Home"></put-attribute>
+    	<put-attribute name="body" value="/WEB-INF/views/home.jsp"></put-attribute>
+    </definition>
+ 
+    <definition name="addEmployee" extends="base.definition">
+        <put-attribute name="title" value="Employee Form"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/employee/addEmployee.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="employeesList" extends="base.definition">
+        <put-attribute name="title" value="Employees List"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/employee/employeesList.jsp"></put-attribute>
+    </definition>
+    
+     <definition name="addUser" extends="base.definition">
+        <put-attribute name="title" value="User Form"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/user/addUser.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="usersList" extends="base.definition">
+        <put-attribute name="title" value="User List"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/user/usersList.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="addProduct" extends="base.definition">
+        <put-attribute name="title" value="Product Form"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/product/addProduct.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="productsList" extends="base.definition">
+        <put-attribute name="title" value="Product List"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/product/productsList.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="addCustomer" extends="base.definition">
+        <put-attribute name="title" value="Customer Form"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/customer/addCustomer.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="customersList" extends="base.definition">
+        <put-attribute name="title" value="Customer List"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/customer/customersList.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="addOrder" extends="base.definition">
+    	<put-attribute name="title" value="Order Form"></put-attribute>
+    	<put-attribute name="body" value="/WEB-INF/views/order/addOrder.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="ordersList" extends="base.definition">
+    	<put-attribute name="title" value="Order List"></put-attribute>
+    	<put-attribute name="body" value="/WEB-INF/views/order/ordersList.jsp"></put-attribute>
+    </definition>
+ 	
+ 	<definition name="viewOrder" extends="base.definition">
+ 		<put-attribute name="title" value="Order Form"></put-attribute>
+    	<put-attribute name="body" value="/WEB-INF/views/order/viewOrder.jsp"></put-attribute>
+ 	</definition>
+ 	
+ 	<definition name="printOrder" extends="base.blank">
+ 		<put-attribute name="title" value="Print Order"></put-attribute>
+    	<put-attribute name="body" value="/WEB-INF/views/order/viewOrder.jsp"></put-attribute>
+ 	</definition>
+ 	
+ 	<definition name="sellOrder" extends="base.definition">
+ 		<put-attribute name="title" value="Sell Order"></put-attribute>
+    	<put-attribute name="body" value="/WEB-INF/views/order/sellOrder.jsp"></put-attribute>
+ 	</definition>
+</tiles-definitions>
