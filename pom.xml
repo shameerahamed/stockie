@@ -148,11 +148,12 @@
             <artifactId>spring-security-taglibs</artifactId>
             <version>3.0.1.RELEASE</version>
         </dependency>
-        <!--<dependency>
+        <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>${servlet-version}</version>
-        </dependency>-->
+            <scope>compile</scope>
+        </dependency>
         <dependency>
             <groupId>taglibs</groupId>
             <artifactId>standard</artifactId>
