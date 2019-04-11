@@ -14,7 +14,7 @@
         <jackson-version>2.7.4</jackson-version>
         <jackson-mapper-version>1.9.13</jackson-mapper-version>
         <nsputility-version>1.0</nsputility-version>
-        <servlet-version>3.0.1</servlet-version>
+        <servlet-version>3.1.0</servlet-version>
         <json-version>20151123</json-version>
         <wcmapi-version>1.0.0</wcmapi-version>
         <spi-version>1.0.0</spi-version>
@@ -144,10 +144,15 @@
             <version>3.0.1.RELEASE</version>
         </dependency>
         <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-taglibs</artifactId>
+            <version>3.0.1.RELEASE</version>
+        </dependency>
+        <!--<dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>${servlet-version}</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>taglibs</groupId>
             <artifactId>standard</artifactId>
